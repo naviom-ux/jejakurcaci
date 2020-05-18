@@ -11,7 +11,7 @@ function SlideShow() {
       query {
         allFile(
           sort: { fields: name, order: ASC }
-          filter: { relativeDirectory: { eq: "slides/masami&daiki" } }
+          filter: { relativeDirectory: { eq: "slides/masami_&_daiki" } }
         ) {
           edges {
             node {
