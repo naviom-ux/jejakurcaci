@@ -51,6 +51,7 @@ const JournalList = () => {
                     <div className="column is-12">
                         <nav className="is-hidden-mobile navbar-general">
                             <NavbarListingJournal/>
+                            <div className="sidemenu-label">MENU</div>
                         </nav>
                     </div>
                 </div>

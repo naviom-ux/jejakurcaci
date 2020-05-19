@@ -50,6 +50,7 @@ const journal = (props) => {
                 <Helmet />
                 <nav className="is-hidden-mobile navbar-general">
                     <NavbarJournal/>
+                    <div className="sidemenu-label">MENU</div>
                 </nav>
                 <div className="columns is-multiline is-centered no-bot-margin journal">
                     <div className="column is-10">

@@ -13,6 +13,7 @@ const LayoutGeneral = ({ children }) => (
     <div className="columns is-gapless">
         <div className="column side-menu">
             <SideMenu/>
+            <div className="sidemenu-label">MENU</div>
         </div>	
         <div className="column is-rest">	
                 <Helmet />

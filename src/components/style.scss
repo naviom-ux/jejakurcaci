@@ -34,6 +34,13 @@ body{
 	color: $black;
 }
 
+a{
+	color: $green;
+}
+
+a:hover{
+	color: $dark-pink;
+}
 
 ::-moz-selection { /* Code for Firefox */
 	color: $white;

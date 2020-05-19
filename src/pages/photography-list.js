@@ -86,6 +86,7 @@ const PhotographyList = () => {
                     <div className="column is-12">
                         <nav className="is-hidden-mobile navbar-general">
                             <NavbarListingPhotography/>
+                            <div className="sidemenu-label">MENU</div>
                         </nav>
                     </div>
                 </div>

@@ -89,6 +89,7 @@ const photography = (props) => {
                 <Helmet />
                 <nav className="is-hidden-mobile navbar-general">
                     <NavbarPhotography/>
+                    <div className="sidemenu-label">MENU</div>
                 </nav>
                 <div className="columns is-multiline is-centered no-bot-margin photography">
                     <div className="column is-10">
@@ -128,37 +129,35 @@ const photography = (props) => {
                                 </div>
                                 <div className="columns is-multiline">
                                     <div className="column is-4">
-                                        <Link to="photography/carousel/masami&daiki">
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail1.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="photography/carousel/masami&daiki">
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail2.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="photography/carousel/masami&daiki">
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail3.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="photography/carousel/masami&daiki">
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail4.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to="photography/carousel/masami&daiki">
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail5.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        {/* <Link to="photography/carousel/masami&daiki"> */}
                                             <div className="see-all-thumb">
                                                 <div className="columns">
                                                     <div className="column is-8">
                                                         <div>
-                                                            {/* <Link to="/photography/masami&daiki_carousel" state={{ modal: true }} >  */}
                                                             <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }} > 
                                                                 See All Images
                                                             </Link>
