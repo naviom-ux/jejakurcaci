@@ -109,7 +109,7 @@ const PhotographyList = () => {
                                                 <p className="proj-title">
                                                     {edge.node.frontmatter.title}
                                                 </p>
-                                                <p className="proj-excerp">
+                                                <p className="proj-excerpt">
                                                     {edge.node.excerpt}
                                                 </p>
                                             </Link>

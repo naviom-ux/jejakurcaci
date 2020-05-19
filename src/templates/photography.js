@@ -160,7 +160,7 @@ const photography = (props) => {
                                                         <div>
                                                             {/* <Link to="/photography/masami&daiki_carousel" state={{ modal: true }} >  */}
                                                             <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }} > 
-                                                                Login
+                                                                See All Images
                                                             </Link>
                                                         </div>
                                                     </div>

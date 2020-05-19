@@ -125,3 +125,35 @@
     }
 }
 
+.sidemenu-label{
+    position: fixed;
+    left: 0;
+    top: 48vh;
+    font-family: 'AlethiaPro-Regular';
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.25;
+    letter-spacing: 2.4px;
+    margin-bottom: 0;
+    align-items: center;
+    color: $white;
+    transform: rotate(-90deg);
+    padding: 0;
+
+    /* Legacy vendor prefixes that you probably don't need... */
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
