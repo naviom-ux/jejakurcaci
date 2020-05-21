@@ -1,10 +1,5 @@
-// Importing variables
-@import './variables.scss';
-
-// Importing React Burger Menu
-@import './react-burger-menu.scss';
-
-
+@import 'styles/variables.scss';
+@import 'styles/react-burger-menu.scss';
 
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
@@ -482,15 +477,15 @@ a:hover{
 }
 
 // Importing Custom Style per-Component
-@import './subscription.scss';
-@import './footer.scss';
-@import './listing.scss';
-@import './project-carousel.scss';
-@import './navbar.scss';
-@import './hero-home.scss';
-@import './journal.scss';
-@import './photography.scss';
-@import './pagination.scss';
-@import './filter-category.scss';
-@import './react-modal.scss';
-@import './about.scss';
+@import 'styles/subscription.scss';
+@import 'styles/footer.scss';
+@import 'styles/listing.scss';
+@import 'styles/project-carousel.scss';
+@import 'styles/navbar.scss';
+@import 'styles/hero-home.scss';
+@import 'styles/journal.scss';
+@import 'styles/photography.scss';
+@import 'styles/pagination.scss';
+@import 'styles/filter-category.scss';
+@import 'styles/react-modal.scss';
+@import 'styles/about.scss';
