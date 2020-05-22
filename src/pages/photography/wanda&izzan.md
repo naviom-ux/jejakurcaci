@@ -9,6 +9,7 @@ thumbnail2: "../../images/slides/wanda_&_izzan/convert dng_14.jpg"
 thumbnail3: "../../images/slides/wanda_&_izzan/convert dng_49.jpg"
 thumbnail4: "../../images/slides/wanda_&_izzan/convert dng_110.jpg"
 thumbnail5: "../../images/slides/wanda_&_izzan/piano-3.jpg"
+totalImages: "50"
 tags: ["#bandung", "#indonesia", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
 quote: "Wanda Izan, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
 ---

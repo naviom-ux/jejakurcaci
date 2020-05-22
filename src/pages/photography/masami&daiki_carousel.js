@@ -98,7 +98,7 @@ function SlideShow() {
                     </div>
                     <div className="column is-5">
                         <div className="right-side">
-                            <p className="pages">5<span>/25</span></p>
+                            <p className="pages">{index+1}<span>/{data.photos.edges.length}</span></p>
                             {data.description.edges.map((edge) => {
                                 return(
                                   <div>

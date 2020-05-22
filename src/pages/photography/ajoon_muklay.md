@@ -9,6 +9,7 @@ thumbnail2: "../../images/slides/ajoon_muklay/jejakurcaci_ajoon_muklay_coupleses
 thumbnail3: "../../images/slides/ajoon_muklay/jejakurcaci_ajoon_muklay_couplesession-22.jpg"
 thumbnail4: "../../images/slides/ajoon_muklay/jejakurcaci_ajoon_muklay_couplesession-16.jpg"
 thumbnail5: "../../images/slides/ajoon_muklay/jejakurcaci_ajoon_muklay_couplesession-29.jpg"
+totalImages: "50"
 tags: ["#shinjuku", "#tokyo", "#japan", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
 quote: "Ajoon Muklay, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
 

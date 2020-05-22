@@ -28,6 +28,7 @@ export const query = graphql`
                     quote
                     tags
                     author
+                    totalImages
                     date(formatString: "MMMM D, YYYY")
                     featuredImage{
                         childImageSharp {
@@ -124,7 +125,7 @@ const photography = (props) => {
                                         <p className="gallery-title">GALLERY</p>
                                     </div>
                                     <div className="column is-6 no-bot-padding">
-                                        <p className="images-count">35 IMAGES</p>
+                                        <p className="images-count">{props.data.regular.frontmatter.totalImages} IMAGES</p>
                                     </div>
                                 </div>
                                 <div className="columns is-multiline">
