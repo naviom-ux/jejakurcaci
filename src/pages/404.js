@@ -26,7 +26,7 @@ const NotFoundPage = () => (
               <div className="column is-10">
                 <h1>404</h1>
                 <h2>The page you requested could not be found</h2>
-                <p><Link to="/" className="back-button">Back to Homepage</Link></p>
+                <p><Link to="/" className="button back-button"><img src={ArrowLBlack} className="see-all"/> Back to Homepage</Link></p>
               </div>  
           </div>
 
