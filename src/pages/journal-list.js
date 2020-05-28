@@ -12,9 +12,7 @@ const JournalList = () => {
     const data = useStaticQuery(graphql`
         query{
             allMarkdownRemark(
-                filter: {
-                    frontmatter: {category: {in: ["Journal - PLACE", "Journal - PEOPLE", "Journal - OTHER"]}}
-                }
+                filter: { fileAbsolutePath: { glob: "**/src/pages/journal/*.md" } },
             ){
                 edges{
                     node{

@@ -1,4 +1,6 @@
 const path = require('path')
+const createPaginatedPages = require('gatsby-paginate')
+
 module.exports.onCreateNode = ({ node, actions }) => {
     const { createNodeField } = actions
 
@@ -34,6 +36,21 @@ module.exports.createPages = async ({ graphql, actions }) => {
         ) {
             edges {
                 node {
+                    frontmatter{
+                        title
+                        category
+                        featuredImage{
+                            childImageSharp{
+                                fluid(maxWidth: 600, quality: 80) {
+                                    base64
+                                    aspectRatio
+                                    src
+                                    srcSet
+                                    sizes
+                                }
+                            }
+                        }
+                    }
                     fields {
                         slug
                     }
@@ -46,6 +63,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
             Promise.reject(result.errors);
         }
 
+
         // Create journal pages
         result.data.journals.edges.forEach(({ node }) => {
             createPage({
@@ -55,6 +73,17 @@ module.exports.createPages = async ({ graphql, actions }) => {
                     slug: node.fields.slug
                 }
             });
+        });
+
+        // Pagination for journal listing page
+        createPaginatedPages({
+            edges: result.data.journals.edges,
+            createPage: createPage,
+            pageTemplate: 'src/templates/listing-test.js',
+            pageLength: 2,
+            pathPrefix: 'journal',
+            buildPath: (index, pathPrefix) =>
+                index > 1 ? `journal/${index}` : `/journal`, // This is optional and this is the default
         });
     });
 
