@@ -15,10 +15,14 @@
     .arrow-r{
         border: none;
         cursor: pointer;
+        background: none;
         img{
             height: 26px;
             padding-left: 42px;
         }
+    }
+    .arrow-r:focus{
+        outline-color: $white;
     }
 
     .arrow-r:hover{
@@ -28,10 +32,24 @@
     .arrow-l{
         border: none;
         cursor: pointer;
+        background: none;
         img{
             height: 26px;
             padding-right: 42px;
         }
     }
+    
+    .arrow-l:focus{
+        outline-color: $white;
+    }
 
+}
+
+.opacity30{
+    opacity: 30%;
+    cursor: not-allowed;
+}
+
+.opacity30:focus{
+    outline-color: $white;
 }

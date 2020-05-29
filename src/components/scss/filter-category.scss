@@ -17,10 +17,11 @@
         letter-spacing: 1.7px;
         font-weight: 600;
         cursor: pointer;
+        background: $white;
     }
 
     .filter:focus, .filter-active:focus{
-        outline-color: $white;
+        outline: none;
     }
 
     .filter:hover{
