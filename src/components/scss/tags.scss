@@ -1,0 +1,26 @@
+.tags-title{
+    font-family: 'Barlow';
+    font-size: 1.25rem;
+    line-height: 2.14;
+    color: $black;
+    text-transform: uppercase;
+}
+
+.tags-line-head{
+    border-bottom: 0px solid #000000;
+    padding-bottom: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.hashtag{
+    font-weight: 600;
+    padding-left: .5rem;
+}
+
+.tags-vertical-list{
+    display: block;
+}
+

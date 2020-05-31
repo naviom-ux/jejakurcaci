@@ -476,6 +476,10 @@ a:hover{
 	padding-right: 0 !important;
 }
 
+.margin-r-1{
+    margin-right: 1rem;
+}
+
 // Importing Custom Style per-Component
 @import 'scss/subscription.scss';
 @import 'scss/footer.scss';
@@ -490,3 +494,4 @@ a:hover{
 @import 'scss/react-modal.scss';
 @import 'scss/about.scss';
 @import 'scss/not-found.scss';
+@import 'scss/tags.scss';

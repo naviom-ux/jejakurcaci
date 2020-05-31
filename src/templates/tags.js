@@ -1,39 +1,95 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
+import Img from "gatsby-image";
+import Helmet from '../components/helmet';
+import NavbarTags from '../components/navbar-tags';
+import SideMenu from '../components/side-menu';
+import Footer from '../components/footer';
+
 
 const Tags = ({ pageContext, data }) => {
     const { tag } = pageContext
     const { edges, totalCount } = data.allMarkdownRemark
     const tagHeader = `${totalCount} post${
       totalCount === 1 ? "" : "s"
-    } tagged with "${tag}"`
+    } tagged with`
+    // const tagHeader = `${tag} (${totalCount})`
     return (
-      <div>
-        <h1>{tagHeader}</h1>
-        <ul>
-          {edges.map(({ node }) => {
-            const { slug } = node.fields
-            const { title, type } = node.frontmatter
+      <div className="columns is-gapless">
+        <div className="column side-menu">
+            <SideMenu/>
+        </div>	
+        <div className="column is-rest">	
+            <Helmet />
+              <nav className="is-hidden-mobile navbar-general">
+                  <NavbarTags/>
+                  <div className="sidemenu-label">MENU</div>
+              </nav>
+              <div className="columns journal-list is-centered">
+                <div className="column is-10">
+                  <div className="columns is-multiline">
+                      
+                      <section className="column is-12 tags-line-head">
+                        <div className="level featured-heading">
+                          <div className="level-left">
+                            <h2 className="level-item tags-title">{tagHeader} <span className="hashtag">#{tag}</span></h2>
+                          </div>
+                          <div className="level-right">
+                            <div class="tags">
+                              <Link to="/tags" className="tag">See All Tags</Link>
+                            </div>
+                          </div>
+                        </div>
+                      </section>  
 
-              if (type === "photography") {
-                return(
-                  <li key={slug}> <Link to={`photography/${slug}`}>{title}</Link> </li>
-                )
-              } else {
-                return(
-                  <li key={slug}> <Link to={`journal/${slug}`}>{title}</Link> </li>
-                )
-                
-            }
-          })}
-        </ul>
-        {/*
-                This links to a page that does not yet exist.
-                You'll come back to it!
-              */}
-        <Link to="/tags">All tags</Link>
-      </div>
+                      {edges.map(({ node }) => {
+                        const { slug } = node.fields
+                        const { title, type, category } = node.frontmatter
+                          
+                          if (type === "photography") {
+                            return(
+                              <div className="column is-4">
+                                  <div className="card-image">
+                                    <Link to={`photography/${slug}`}>
+                                      <Img className="image" fluid={node.frontmatter.featuredImage.childImageSharp.fluid}/>
+                                    </Link>
+                                  </div>
+                                  <div className="card-content">
+                                    <Link key={slug} to={`photography/${slug}`}>
+                                      <p className="proj-cat">{category}</p>
+                                      <p className="proj-title">{title}</p>
+                                    </Link> 
+                                  </div>
+                                </div>
+                                )
+                              } else {
+                                return(
+                                  <div className="column is-4">
+                                    <div className="card-image">
+                                      <Link to={`journal/${slug}`}>
+                                        <Img className="image" fluid={node.frontmatter.featuredImage.childImageSharp.fluid}/>
+                                      </Link>
+                                    </div>
+                                    <div className="card-content">
+                                      <Link key={slug} to={`journal/${slug}`}>
+                                        <p className="proj-cat">{category}</p>
+                                        <p className="proj-title">{title}</p>
+                                      </Link> 
+                                    </div>
+                                  </div>  
+                                )
+                              }
+                            })}
+
+                        </div>
+                      </div>
+                    </div>
+
+                <Footer/>
+              </div>
+        </div>
+       
     )
   }
   Tags.propTypes = {
@@ -82,10 +138,20 @@ const Tags = ({ pageContext, data }) => {
             }
             frontmatter {
               title
+              category
               type
+              tags
+              featuredImage{
+                childImageSharp {
+                  fluid(maxWidth: 480, quality:80) {
+                      ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
       }
+
     }
   `
