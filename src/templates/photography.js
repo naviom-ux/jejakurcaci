@@ -130,46 +130,45 @@ const photography = (props) => {
                                 </div>
                                 <div className="columns is-multiline">
                                     <div className="column is-4">
-                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail1.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail2.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail3.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail4.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`}>
+                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }}>
                                             <Img className="image"  fluid={props.data.regular.frontmatter.thumbnail5.childImageSharp.fluid}/>
                                         </Link>
                                     </div>
                                     <div className="column is-4">
-                                            <div className="see-all-thumb">
-                                                <div className="columns">
-                                                    <div className="column is-8">
-                                                        <div>
-                                                            <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }} > 
-                                                                See All Images
-                                                            </Link>
-                                                        </div>
-                                                    </div>
-                                                    <div className="column is-4">
-                                                        <img className="image" src={ArrowRBlack} alt="Arrow Right" />
+                                        <div className="see-all-thumb">
+                                            <div className="columns">
+                                                <div className="column is-8">
+                                                    <div>
+                                                        <Link to={`/photography/${props.data.regular.fields.slug}_carousel/`} state={{ modal: true }} > 
+                                                            See All Images
+                                                        </Link>
                                                     </div>
                                                 </div>
+                                                <div className="column is-4">
+                                                    <img className="image" src={ArrowRBlack} alt="Arrow Right" />
+                                                </div>
                                             </div>
-                                        {/* </Link> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
