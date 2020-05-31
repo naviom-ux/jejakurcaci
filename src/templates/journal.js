@@ -1,6 +1,6 @@
 import React from 'react';
 import '../components/style.scss';
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Helmet from '../components/helmet';
 import NavbarJournal from '../components/navbar-journal';
 import SideMenu from '../components/side-menu';
@@ -78,9 +78,9 @@ const journal = (props) => {
                         <div class="tags">
                             
                             {props.data.markdownRemark.frontmatter.tags.map((tag) => [
-                                <span className="tag">
+                                <Link to={`tags/${tag}`} className="tag">
                                     {tag}
-                                </span>
+                                </Link>
                             ])}
 
                         </div>

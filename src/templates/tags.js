@@ -14,12 +14,18 @@ const Tags = ({ pageContext, data }) => {
         <ul>
           {edges.map(({ node }) => {
             const { slug } = node.fields
-            const { title } = node.frontmatter
-            return (
-              <li key={slug}>
-                <Link to={slug}>{title}</Link>
-              </li>
-            )
+            const { title, type } = node.frontmatter
+
+              if (type === "photography") {
+                return(
+                  <li key={slug}> <Link to={`photography/${slug}`}>{title}</Link> </li>
+                )
+              } else {
+                return(
+                  <li key={slug}> <Link to={`journal/${slug}`}>{title}</Link> </li>
+                )
+                
+            }
           })}
         </ul>
         {/*
@@ -53,12 +59,20 @@ const Tags = ({ pageContext, data }) => {
     }),
   }
   export default Tags
+
+
   export const pageQuery = graphql`
     query($tag: String) {
       allMarkdownRemark(
         limit: 2000
         sort: { fields: [frontmatter___date], order: DESC }
-        filter: { frontmatter: { tags: { in: [$tag] } } }
+        filter: { 
+          frontmatter: { 
+            tags: { in: [$tag] } 
+            # If you want to filter based on type journal
+            # type: { in: ["journal"] }
+          } 
+        }
       ) {
         totalCount
         edges {
@@ -68,6 +82,7 @@ const Tags = ({ pageContext, data }) => {
             }
             frontmatter {
               title
+              type
             }
           }
         }

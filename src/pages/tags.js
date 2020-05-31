@@ -62,7 +62,8 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 2000
-      filter: { frontmatter: { type: { eq: "journal" } } }
+      # If you want to filter by journal type
+      # filter: { frontmatter: { type: { eq: "journal" } } }
       ) {
       group(field: frontmatter___tags) {
         fieldValue
