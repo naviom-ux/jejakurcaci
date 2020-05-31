@@ -5,6 +5,7 @@ author: "Dani Effendi"
 category: "Journal - PEOPLE"
 featuredImage: "../../images/article/DSC06143.jpg"
 tags: ["jakarta", "indonesia", "portraitphotography", "story", "photography", "journal", "figure", "portrait", "people"]
+type: "journal"
 ---
 
 Hi! Akhirnya setelah sekian lama!

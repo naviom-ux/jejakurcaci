@@ -5,6 +5,7 @@ author: "Dani Effendi"
 category: "Journal - PLACE"
 featuredImage: "../../images/article/DSC04157.jpg"
 tags: ["bandung", "indonesia", "wanderlust", "story", "photography", "journal", "place", "portrait", "staycation", "accomodation", "review"]
+type: "journal"
 ---
 
 Siapa di antara kamu yang ketika ulang tahun inginnya sendiri dan tidak ingin diganggu oleh siapa-siapa?

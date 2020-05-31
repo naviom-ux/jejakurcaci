@@ -5,6 +5,7 @@ author: "Dani Effendi"
 category: "Journal - PEOPLE"
 featuredImage: "../../images/article/DSC02814.jpg"
 tags: ["tokyo", "japan", "portraitphotography", "story", "photography", "journal", "figure", "portrait", "people"]
+type: "journal"
 ---
 
 Akhirnya waktu yang ditunggu-tunggu tiba. Salah satu perjalanan yang tidak direncanakan namun akhirnya bisa terlaksana juga.

@@ -5,6 +5,7 @@ author: "Dani Effendi"
 category: "Journal - PLACE"
 featuredImage: "../../images/article/DSC03250.jpg"
 tags: ["Bandung", "Indonesia", "wanderlust", "story", "photography", "journal", "place", "staycation", "accomodation", "review"]
+type: "journal"
 ---
 
 SAMPURASUN!

@@ -5,6 +5,7 @@ author: "Dani Effendi"
 category: "Journal - PLACE"
 featuredImage: "../../images/article/DSC01176.jpg"
 tags: ["bandung", "indonesia", "wanderlust", "story", "photography", "journal", "place", "cafe", "restaurant", "coffeeshop", "review"]
+type: "journal"
 ---
 
 Ada beberapa kalimat ajakan unik yang selalu terlontar dari teman-teman padaku: “Dan! Temu yuk sambil ngopi-ngopi!” atau “Lama gak ketemu. Ngopi lah kita!”.

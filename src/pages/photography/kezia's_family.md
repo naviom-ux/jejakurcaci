@@ -12,6 +12,7 @@ thumbnail5: "../../images/slides/kezia's_family/jejakurcaci_kezia_familysession-
 totalImages: "50"
 tags: ["#bandung", "#indonesia", "#streetphotography", "#love", "#familiysession", "#wanderlust", "#2019"]
 quote: "Kezia, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
+type: "photography"
 ---
 
 

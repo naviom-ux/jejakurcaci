@@ -12,6 +12,7 @@ thumbnail5: "../../images/slides/masami_&_daiki/jejakurcaci_masami_daiki_couples
 totalImages: "46"
 tags: ["#gaienmae", "#tokyo", "#japan", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
 quote: "Masami Daiki, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
+type: "photography"
 ---
 
 On one fine afternoon in Tokyo, I had a pleasant chance to take a walk with a lovely couple, Masami and Daiki, all the way from Gaienmae to Meiji Jingu. It was rather spontaneous and we had no specific destination - we decided to let the universe do its magic on us. But apparently, sometimes the best plan is having no plan at all because we accidentally discovered so many cute places and ended up with so many wonderful pictures! It was a 2 km walk, but we had so much fun that it didn't feel the slightest bit exhausting!

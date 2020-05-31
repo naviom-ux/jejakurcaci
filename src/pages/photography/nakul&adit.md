@@ -12,6 +12,7 @@ thumbnail5: "../../images/slides/nakul&adit/jejakurcaci_nakul_adit_couplesession
 totalImages: "50"
 tags: ["#bandung", "#indonesia", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
 quote: "Nakul Adit, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
+type: "photography"
 ---
 
 

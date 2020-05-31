@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-bulma-quickstart",
-  "description": "A Project to bootstrap your next Gatsby + Bulma site.",
+  "name": "Jejakurcaci",
+  "description": "Dani Effendi",
   "version": "1.10.1",
-  "author": "Aman Mittal <amandeepmittal@live.com>",
+  "author": "Dani Effendi <danieffendi@gmail.com>",
   "dependencies": {
     "bulma": "^0.8.0",
     "gatsby": "^2.19.45",
