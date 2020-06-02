@@ -19,7 +19,7 @@ function HeroSlider() {
               id
               name
               childImageSharp {
-                fluid(maxWidth: 1920, quality: 90) {
+                fluid(maxWidth: 1920, quality: 85) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -38,32 +38,86 @@ function HeroSlider() {
   const { node } = allFile.edges[index]
   console.log(index)
   console.log(length)
-  return (
-    <div className="hero-home">
+
+  if ( index === 0){
+    return (
+      <div className="hero-home">
         <Img
           fluid={node.childImageSharp.fluid}
           key={node.id}
           alt={node.name.replace(/-/g, " ").substring(2)}
         className="hero-image"/>
-      <div className="hero-navigation">
-        <div className="columns is-multiline">
-            <div className="column is-10 is-offset-1">
-              <h2 className="hero-title">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</h2>
-                <span class="dot-active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <div className="column is-2">
-              <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack} alt="prev"/></button>
-            </div>
-            <div className="column is-2">
-              <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack} alt="next"/></button>
+        <div className="hero-navigation">
+          <div className="columns is-multiline">
+              <div className="column is-10 is-offset-1">
+                <h2 className="hero-title">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</h2>
+                  <span class="dot-active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+              </div>
+              <div className="column is-2">
+                <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack} alt="prev"/></button>
+              </div>
+              <div className="column is-2">
+                <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack} alt="next"/></button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-  )
+    )
+  } else if ( index === 1) { 
+    return(
+      <div className="hero-home">
+        <Img
+          fluid={node.childImageSharp.fluid}
+          key={node.id}
+          alt={node.name.replace(/-/g, " ").substring(2)}
+        className="hero-image"/>
+        <div className="hero-navigation">
+          <div className="columns is-multiline">
+              <div className="column is-10 is-offset-1">
+                <h2 className="hero-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h2>
+                  <span class="dot"></span>
+                  <span class="dot-active"></span>
+                  <span class="dot"></span>
+              </div>
+              <div className="column is-2">
+                <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack} alt="prev"/></button>
+              </div>
+              <div className="column is-2">
+                <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack} alt="next"/></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    } else { 
+      return(
+          <div className="hero-home">
+            <Img
+              fluid={node.childImageSharp.fluid}
+              key={node.id}
+              alt={node.name.replace(/-/g, " ").substring(2)}
+            className="hero-image"/>
+            <div className="hero-navigation">
+              <div className="columns is-multiline">
+                  <div className="column is-10 is-offset-1">
+                    <h2 className="hero-title">In reprehenderit in voluptate velit esse cillum dolore</h2>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot-active"></span>
+                  </div>
+                  <div className="column is-2">
+                    <button onClick={() => handlePrevious()} className="prev-slide"><img src={ArrowLeftBlack} alt="prev"/></button>
+                  </div>
+                  <div className="column is-2">
+                    <button onClick={() => handleNext()} className="next-slide"><img src={ArrowRightBlack} alt="next"/></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+      }
 }
 
 

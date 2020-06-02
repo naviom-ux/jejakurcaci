@@ -24,7 +24,7 @@ const ReadTheStories = () => {
                             category
                             featuredImage{
                                 childImageSharp {
-                                    fluid(maxWidth: 600) {
+                                    fluid(maxWidth: 600, quality: 80) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }

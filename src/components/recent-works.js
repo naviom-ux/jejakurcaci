@@ -23,7 +23,7 @@ const RecentWorks = () => {
                             category
                             featuredImage{
                                 childImageSharp {
-                                    fluid(maxWidth: 1920) {
+                                    fluid(maxWidth: 480, quality: 80) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }
@@ -50,7 +50,7 @@ const RecentWorks = () => {
                             category
                             featuredImage{
                                 childImageSharp {
-                                    fluid(maxWidth: 1920) {
+                                    fluid(maxWidth: 640, quality: 80) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }
