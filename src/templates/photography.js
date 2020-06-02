@@ -39,35 +39,35 @@ export const query = graphql`
                     }
                     thumbnail1{
                         childImageSharp {
-                            fluid(maxWidth: 400, quality: 80) {
+                            fluid(maxWidth: 250, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail2{
                         childImageSharp {
-                            fluid(maxWidth: 400, quality: 80) {
+                            fluid(maxWidth: 250, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail3{
                         childImageSharp {
-                            fluid(maxWidth: 400, quality: 80) {
+                            fluid(maxWidth: 250, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail4{
                         childImageSharp {
-                            fluid(maxWidth: 400, quality: 80) {
+                            fluid(maxWidth: 250, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
                     }
                     thumbnail5{
                         childImageSharp {
-                            fluid(maxWidth: 400, quality: 80) {
+                            fluid(maxWidth: 250, quality: 80) {
                                 ...GatsbyImageSharpFluid
                             }
                         }
@@ -181,9 +181,9 @@ const photography = (props) => {
                         <div className="tags">
                                 
                             {props.data.regular.frontmatter.tags.map((tag) => [
-                                <span className="tag">
+                                <Link to={`tags/${tag}`} className="tag">
                                     {tag}
-                                </span>
+                                </Link>
                             ])}
 
                         </div>

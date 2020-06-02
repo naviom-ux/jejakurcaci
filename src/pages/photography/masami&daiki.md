@@ -10,7 +10,7 @@ thumbnail3: "../../images/slides/masami_&_daiki/jejakurcaci_masami_daiki_couples
 thumbnail4: "../../images/slides/masami_&_daiki/jejakurcaci_masami_daiki_couplesession-35.jpg"
 thumbnail5: "../../images/slides/masami_&_daiki/jejakurcaci_masami_daiki_couplesession-38.jpg"
 totalImages: "46"
-tags: ["#gaienmae", "#tokyo", "#japan", "#streetphotography", "#love", "#couple", "#wanderlust", "#2019", "#couplesession"]
+tags: ["gaienmae", "tokyo", "japan", "streetphotography", "love", "couple", "wanderlust", "2019", "couplesession"]
 quote: "Masami Daiki, scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food claw at curtains stretch and yawn nibble on tuna ignore human bite human hand eat a plant, kill a hand."
 type: "photography"
 ---
