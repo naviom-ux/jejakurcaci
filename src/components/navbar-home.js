@@ -22,9 +22,9 @@ const NavbarHome = () => (
 					</div>
 					<div className="navbar-end">
 						<span className="navbar-item">
-							<a href="#">
+							<Link to="/search">
 								<img className="image search" src={SearchBlack} alt="Search Icon" />	
-							</a>
+							</Link>
 						</span>
 					</div>
 					<div className="column is-12 second-row hidden-home">

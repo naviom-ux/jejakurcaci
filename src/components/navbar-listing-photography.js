@@ -20,7 +20,7 @@ const NavbarListingPhotography = () => (
 									<img className="image brand-logo" src={BrandLogo} alt="Brand Logo" />	
 								</Link>
 							</div>
-							<Link to="/" className="search-top-right">
+							<Link to="/search" className="search-top-right">
 								<span className="navbar-item">
 									<img className="image search" src={SearchBlack} alt="Search Icon" />	
 								</span>
@@ -33,7 +33,7 @@ const NavbarListingPhotography = () => (
 							<div class="breadcrumb" >
 								<ul>
 									<li><Link to="/">Home</Link></li>
-									<li class="is-active"><Link to="#" aria-current="page">Love Stories</Link></li>
+									<li class="is-active"><Link to="/photography" aria-current="page">Love Stories</Link></li>
 								</ul>
 							</div>
 						</div>

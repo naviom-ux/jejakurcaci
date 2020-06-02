@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Img } from 'gatsby'
+import { Link } from 'gatsby'
 import Helmet from '../components/helmet';
 import NavbarListingJournal from '../components/navbar-listing-journal';
 import SideMenu from '../components/side-menu';
@@ -11,15 +11,15 @@ import ArrowLBlack from '../images/arrow-left-black.svg';
 
 const NavLink = props => {
   if (!props.test) {
-    return <Link to={props.url}><img src={props.src}/></Link>
+    return <Link to={props.url}><img src={props.src} alt="Arrow"/></Link>
   } else {
-    return <span className="opacity30"><img src={props.src}/></span>
+    return <span className="opacity30"><img src={props.src} alt="Arrow"/></span>
   }
 }
 
 const Listing = ({pageContext}) => {
     const { group, index, first, last, pageCount } = pageContext
-    const previousUrl = index - 1 == 1 ? '/journal/' : "/journal/"+(index - 1).toString()
+    const previousUrl = index - 1 === 1 ? '/journal/' : "/journal/"+(index - 1).toString()
     const nextUrl = "/journal/" + (index + 1).toString()
   
   return (
@@ -60,7 +60,7 @@ const Listing = ({pageContext}) => {
                     <div key={node.id} className="column is-4">
                       <div className="card-image">
                           <Link to={`/journal/${node.fields.slug}`}>
-                            <img src={node.frontmatter.featuredImage.childImageSharp.fluid.src}/>
+                            <img src={node.frontmatter.featuredImage.childImageSharp.fluid.src} alt="Thumbnail"/>
                           </Link>
                       </div>
                       <div className="card-content">

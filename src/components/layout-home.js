@@ -8,7 +8,7 @@ import Footer from './footer';
 import ReadTheStories from './read-the-stories';
 import Subscription from './subscription';
 import RecentWorks from './recent-works';
-import { graphql } from 'gatsby';
+// import { graphql } from 'gatsby';
 
 
 
@@ -45,25 +45,25 @@ const LayoutHome = ({ children }) => (
 );
 
 
-const indexQuery = graphql`
-    query{
-        allMarkdownRemark(limit : 5){
-			totalCount
-            edges{
-                node{
-                    id
-                    frontmatter{
-                    title
-                    date
-                    author
-					category
-                    }
-                    excerpt
-                }
-            }
-        }
-    }
-`
+// const indexQuery = graphql`
+//     query{
+//         allMarkdownRemark(limit : 5){
+// 			totalCount
+//             edges{
+//                 node{
+//                     id
+//                     frontmatter{
+//                     title
+//                     date
+//                     author
+// 					category
+//                     }
+//                     excerpt
+//                 }
+//             }
+//         }
+//     }
+// `
 
 
 export default LayoutHome;

@@ -6,7 +6,7 @@ import kebabCase from "lodash/kebabCase"
 
 // Components
 import { Link, graphql } from "gatsby"
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 import Helmet from '../components/helmet';
 import NavbarAllTags from '../components/navbar-all-tags';
 import SideMenu from '../components/side-menu';

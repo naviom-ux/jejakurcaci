@@ -1,11 +1,9 @@
 import React from 'react'
-import '../components/style.scss';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import Helmet from '../components/helmet';
 import SideMenu from '../components/side-menu';
 import Footer from '../components/footer';
 import NavbarHome from '../components/navbar-home';
-import Image1 from '../images/slides/nakul&adit/jejakurcaci_nakul_adit_couplesession-39.jpg';
 import ArrowLBlack from '../images/arrow-left-black.svg';
 
 const NotFoundPage = () => (
@@ -26,7 +24,7 @@ const NotFoundPage = () => (
               <div className="column is-10">
                 <h1>404</h1>
                 <h2>The page you requested could not be found</h2>
-                <p><Link to="/" className="button back-button"><img src={ArrowLBlack} className="see-all"/> Back to Homepage</Link></p>
+                <p><Link to="/" className="button back-button"><img src={ArrowLBlack} className="see-all" alt="back arrow"/> Back to Homepage</Link></p>
               </div>  
           </div>
 

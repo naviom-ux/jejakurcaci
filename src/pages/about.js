@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/style.scss';
-import { graphql, useStaticQuery } from 'gatsby';
+// import { graphql, useStaticQuery } from 'gatsby';
 import Helmet from '../components/helmet';
 import SideMenu from '../components/side-menu';
 import Footer from '../components/footer';
@@ -31,7 +31,7 @@ const About = () => {
                                 Duis aute irure dolor in reprehenderit in voluptate  velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>  
                             <div className="column is-6">
-                                <img className="featured-image" src={Image1} alt="Featured Image" />	
+                                <img className="featured-image" src={Image1} alt="Featured" />	
                             </div>  
                         </div>  
                     </div>  

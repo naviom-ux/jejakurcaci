@@ -86,7 +86,6 @@ function SlideShow() {
                               fluid={node.childImageSharp.fluid}
                               key={node.id}
                               alt={node.name.replace(/-/g, " ").substring(2)}
-                              alt="photo slide"
                             />
                           </div>
                           <div>

@@ -20,7 +20,7 @@ const NavbarJornal = () => (
 									<img className="image brand-logo" src={BrandLogo} alt="Brand Logo" />	
 								</Link>
 							</div>
-							<Link to="/" className="search-top-right">
+							<Link to="/search" className="search-top-right">
 								<span className="navbar-item">
 									<img className="image search" src={SearchBlack} alt="Search Icon" />	
 								</span>
@@ -34,7 +34,7 @@ const NavbarJornal = () => (
 								<ul>
 									<li><Link to="/">Home</Link></li>
 									<li><Link to="/journal-list/">Journal</Link></li>
-									<li class="is-active"><a href="#" aria-current="page">Page</a></li>
+									<li class="is-active"><Link to="/page" aria-current="page">Page</Link></li>
 								</ul>
 							</div>
 						</div>
