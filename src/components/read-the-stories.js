@@ -14,7 +14,7 @@ const ReadTheStories = () => {
                     order: DESC
                 },
                 filter: {
-                    frontmatter: {category: {in: ["Journal - PLACE", "Journal - PEOPLE", "Journal - OTHER"]}}
+                    frontmatter: { type: { eq: "journal" } }
                 },
                 limit : 5){
                 edges{
@@ -73,7 +73,7 @@ const ReadTheStories = () => {
                                             <div className="columns">
                                                 <div className="column is-8">
                                                     <div>
-                                                        <Link to="/journal-list">See All Journal Entries</Link> 
+                                                        <Link to="/journal">See All Journal Entries</Link> 
                                                     </div>
                                                 </div>
                                                 <div className="column is-4">

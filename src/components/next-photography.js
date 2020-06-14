@@ -13,7 +13,7 @@ const NextPhotography = () => {
                     order: ASC
                 },
                 filter: {
-                    frontmatter: {category: {in: ["Love Stories → Couples & Lovebirds"]}}
+                    frontmatter: { type: { eq: "photography" } }
                 },
                 limit : 3
                 ){

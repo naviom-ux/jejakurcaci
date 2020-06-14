@@ -2,7 +2,7 @@
 title: "Glamping Mulberry Hill by The Lodge – Bandung"
 date: "2019-04-01"
 author: "Dani Effendi"
-category: "Journal - PLACE"
+category: "Place"
 featuredImage: "../../images/article/DSC03250.jpg"
 tags: ["Bandung", "Indonesia", "wanderlust", "story", "photography", "journal", "place", "staycation", "accomodation", "review"]
 type: "journal"

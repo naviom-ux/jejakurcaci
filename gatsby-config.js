@@ -3,7 +3,7 @@ module.exports = {
 		title: 'Jejakurcaci',
 		author: 'Dani Effendi',
 		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
-		description: 'Journal and Portfolio Site of Jejakurcaci',
+		description: 'Journal and Portfolio Site',
 		keywords: 'Photography, Blog, Dani, Dani Effendi, Effendi, Jejakurcaci, Jejak Kurcaci',
 		// twitter: 'https://twitter.com/amanhimself',
 		// github: `https://github.com/amandeepmittal`,

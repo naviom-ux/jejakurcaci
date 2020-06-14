@@ -2,7 +2,7 @@
 title: "Menyepi di Imah Seniman, Lembang"
 date: "2019-04-01"
 author: "Dani Effendi"
-category: "Journal - PLACE"
+category: "Place"
 featuredImage: "../../images/article/DSC04157.jpg"
 tags: ["bandung", "indonesia", "wanderlust", "story", "photography", "journal", "place", "portrait", "staycation", "accomodation", "review"]
 type: "journal"

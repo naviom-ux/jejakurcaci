@@ -2,7 +2,7 @@
 title: "Ajoon Muklay, Japan"
 date: "2019-01-01"
 author: "Dani Effendi"
-category: "Love Stories → Couples & Lovebirds"
+category: "Couples & Lovebirds"
 featuredImage: "../../images/slides/ajoon_muklay/jejakurcaci_ajoon_muklay_couplesession-28.jpg"
 thumbnail1: "../../images/slides/ajoon_muklay/jejakurcaci_ajoon_muklay_couplesession-01.jpg"
 thumbnail2: "../../images/slides/ajoon_muklay/jejakurcaci_ajoon_muklay_couplesession-06.jpg"

@@ -2,7 +2,7 @@
 title: "Nakul & Adit, Bandung"
 date: "2019-01-01"
 author: "Dani Effendi"
-category: "Love Stories → Couples & Lovebirds"
+category: "Couples & Lovebirds"
 featuredImage: "../../images/slides/nakul&adit/jejakurcaci_nakul_adit_couplesession-23.jpg"
 thumbnail1: "../../images/slides/nakul&adit/jejakurcaci_nakul_adit_couplesession-01.jpg"
 thumbnail2: "../../images/slides/nakul&adit/jejakurcaci_nakul_adit_couplesession-02.jpg"

@@ -8,7 +8,7 @@ import PinterestBlack from '../images/pinterest-black.svg';
 import FacebookBlack from '../images/facebook-black.svg';
 import InstagramBlack from '../images/instagram-black.svg';
 
-const NavbarPhotography = () => (
+const NavbarCategoryPhotography = () => (
 	<div>
 		<nav className="navbar border-bottom">
 			<div className="container">
@@ -33,8 +33,7 @@ const NavbarPhotography = () => (
 							<div class="breadcrumb" >
 								<ul>
 									<li><Link to="/">Home</Link></li>
-									<li><Link to="/photography/">Photography</Link></li>
-									<li class="is-active"><Link to="/page" aria-current="page">Page</Link></li>
+									<li class="is-active"><Link to="/photography" aria-current="page">Photography</Link></li>
 								</ul>
 							</div>
 						</div>
@@ -69,4 +68,4 @@ const NavbarPhotography = () => (
 	</div>
 );
 
-export default NavbarPhotography;
+export default NavbarCategoryPhotography;

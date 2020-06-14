@@ -29,6 +29,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     const photographyTemplate = path.resolve('./src/templates/photography.js')
     
     const tagTemplate = path.resolve("src/templates/tags.js")
+    const catPhotographyTemplate = path.resolve("src/templates/photography-category.js")
 
     // Individual journals pages
 	const journals = graphql(`
@@ -65,6 +66,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
               fieldValue
             }
           }
+
+        categoriesGroup:allMarkdownRemark(limit: 2000){
+            group(field: frontmatter___category) {
+                fieldValue
+            }
+        }
+
     }
     `).then(result => {
         if (result.errors) {
@@ -92,6 +100,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 component: tagTemplate,
                 context: {
                     tag: tag.fieldValue,
+                },
+            })
+        })
+
+        // Extract category data from query
+        const categories = result.data.categoriesGroup.group
+        // Make category pages
+        categories.forEach(category => {
+            createPage({
+                path: `/photography/${_.kebabCase(category.fieldValue)}/`,
+                component: catPhotographyTemplate,
+                context: {
+                    category: category.fieldValue,
                 },
             })
         })

@@ -13,7 +13,7 @@ const NextJournal = () => {
                     order: ASC
                 },
                 filter: {
-                    frontmatter: {category: {in: ["Journal - PLACE", "Journal - PEOPLE", "Journal - OTHER"]}}
+                    frontmatter: { type: { eq: "journal" } }
                 },
                 limit : 3){
                 edges{

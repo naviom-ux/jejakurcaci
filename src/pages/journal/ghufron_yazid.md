@@ -2,7 +2,7 @@
 title: "Ghufron Yazid – Floral Designer"
 date: "2019-04-01"
 author: "Dani Effendi"
-category: "Journal - PEOPLE"
+category: "People"
 featuredImage: "../../images/article/DSC02814.jpg"
 tags: ["tokyo", "japan", "portraitphotography", "story", "photography", "journal", "figure", "portrait", "people"]
 type: "journal"

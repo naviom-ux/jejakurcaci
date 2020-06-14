@@ -11,7 +11,7 @@ const RecentWorks = () => {
         query{
             regular: allMarkdownRemark(
                 filter: {
-                    frontmatter: {category: {in: ["Love Stories → Couples & Lovebirds", "Love Stories → Folks & Families"]}}
+                    frontmatter: { type: { eq: "photography" } }
                 },
                 limit: 4,
                 skip: 1
@@ -39,7 +39,7 @@ const RecentWorks = () => {
 
             featured: allMarkdownRemark(
                 filter: {
-                    frontmatter: {category: {in: ["Love Stories → Couples & Lovebirds", "Love Stories → Folks & Families"]}}
+                    frontmatter: { type: { eq: "photography" } }
                 },
                 limit: 1,
             ){
@@ -75,7 +75,7 @@ const RecentWorks = () => {
                     <h2 className="is-size-2 level-item group-list-title">Recent Works</h2>
                 </div>
                 <div className="level-right">
-                    <Link to="/photography-list" class="button is-normal level-item">
+                    <Link to="/photography" class="button is-normal level-item">
                         SEE ALL WORKS
                             <img className="image see-all" src={ArrowRBlack} alt="Arrow Right" />	
                     </Link>

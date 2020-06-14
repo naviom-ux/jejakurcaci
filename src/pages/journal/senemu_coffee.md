@@ -2,7 +2,7 @@
 title: "Senemu Coffee – Bandung"
 date: "2019-04-01"
 author: "Dani Effendi"
-category: "Journal - PLACE"
+category: "Place"
 featuredImage: "../../images/article/DSC01176.jpg"
 tags: ["bandung", "indonesia", "wanderlust", "story", "photography", "journal", "place", "cafe", "restaurant", "coffeeshop", "review"]
 type: "journal"

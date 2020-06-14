@@ -2,7 +2,7 @@
 title: "Rachel Ajeng – Illustrator"
 date: "2019-04-01"
 author: "Dani Effendi"
-category: "Journal - PEOPLE"
+category: "People"
 featuredImage: "../../images/article/DSC06143.jpg"
 tags: ["jakarta", "indonesia", "portraitphotography", "story", "photography", "journal", "figure", "portrait", "people"]
 type: "journal"
