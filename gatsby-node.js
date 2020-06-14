@@ -122,7 +122,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
             edges: result.data.journals.edges,
             createPage: createPage,
             pageTemplate: 'src/templates/listing-test.js',
-            pageLength: 9,
+            pageLength: 3,
             pathPrefix: 'journal',
             buildPath: (index, pathPrefix) =>
                 index > 1 ? `journal/${index}` : `/journal`, // This is optional and this is the default

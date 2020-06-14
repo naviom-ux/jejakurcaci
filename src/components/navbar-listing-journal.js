@@ -30,10 +30,10 @@ const NavbarListingJournal = () => (
 					<div className="column is-12 second-row">
 					<div className="columns">
 						<div className="column is-4">
-							<div class="breadcrumb" >
+							<div className="breadcrumb" >
 								<ul>
 									<li><Link to="/">Home</Link></li>
-									<li class="is-active"><Link to="/journal" aria-current="page">Journal</Link></li>
+									<li className="is-active"><Link to="/journal" aria-current="page">Journal</Link></li>
 								</ul>
 							</div>
 						</div>
