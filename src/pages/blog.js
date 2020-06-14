@@ -7,7 +7,7 @@ import Subscription from '../components/subscription';
 import Footer from '../components/footer';
 
 // import Img from "gatsby-image"
-import BlogItems from "../components/blogItems"
+import BlogItems from "../templates/blog-list-template"
 
 
 const Blog = ({ data }) => {
