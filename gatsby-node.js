@@ -2,9 +2,14 @@ const path = require('path')
 const createPaginatedPages = require('gatsby-paginate')
 const _ = require("lodash")
 
+// Making sure frontmatter images in netlifycms to works
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+
 module.exports.onCreateNode = ({ node, actions }) => {
     const { createNodeField } = actions
 
+    // Making sure frontmatter images in netlifycms to works
+    fmImagesToRelative(node);
 
     if (node.internal.type === 'MarkdownRemark'){
         const slug = path.basename(node.fileAbsolutePath, '.md')
@@ -16,6 +21,8 @@ module.exports.onCreateNode = ({ node, actions }) => {
         })
         // console.log(node)
     }
+
+   
 }
 
 
@@ -45,17 +52,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
                     frontmatter{
                         title
                         category
-                        featuredImage{
-                            childImageSharp{
-                                fluid(maxWidth: 600, quality: 80) {
-                                    base64
-                                    aspectRatio
-                                    src
-                                    srcSet
-                                    sizes
-                                }
-                            }
-                        }
                     }
                     fields {
                         slug
@@ -174,15 +170,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
 
 // Make sure every image in frontmatter will be a File not a String
-exports.sourceNodes = ({ actions, schema }) => {
-    const { createTypes } = actions
-    createTypes(`
-      type MarkdownRemarkFrontmatter {
-        image: File
-      }
+// exports.sourceNodes = ({ actions, schema }) => {
+//     const { createTypes } = actions
+//     createTypes(`
+//       type MarkdownRemarkFrontmatter {
+//         image: File
+//       }
   
-      type MarkdownRemark implements Node {
-        frontmatter: MarkdownRemarkFrontmatter
-      }
-    `)
-  }
+//       type MarkdownRemark implements Node {
+//         frontmatter: MarkdownRemarkFrontmatter
+//       }
+//     `)
+//   }

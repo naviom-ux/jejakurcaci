@@ -17,6 +17,13 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
+			  path: `${__dirname}/content`,
+			  name: 'content',
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
 				name: `images`,
 				path: `${__dirname}/src/images`
 			}
@@ -26,13 +33,6 @@ module.exports = {
 			options: {
 				name: `pages`,
 				path: `${__dirname}/src/pages`
-			}
-		},
-		{
-			resolve: `gatsby-source-filesystem`,
-			options: {
-				name: `pages`,
-				path: `${__dirname}/content`
 			}
 		},
 		`gatsby-plugin-sharp`,
@@ -47,6 +47,7 @@ module.exports = {
 							// quality: 80,
 							LinkImagesToOriginal: false,
 							// maxWidth: 1280
+							name: `content`,
 						}
 					}
 

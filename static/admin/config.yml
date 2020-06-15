@@ -11,7 +11,7 @@ collections:
     folder: 'content/journal'
     create: true
     slug: '{{slug}}'
-    media_folder: 'static/img/uploads'
+    media_folder: ''
     public_folder: 'img/uploads'
     editor:
       preview: false
@@ -30,7 +30,7 @@ collections:
     folder: 'content/photography'
     create: true
     slug: '{{slug}}'
-    media_folder: 'static/img/uploads'
+    media_folder: ''
     public_folder: 'img/uploads'
     editor:
       preview: false
