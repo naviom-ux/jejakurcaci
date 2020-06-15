@@ -60,7 +60,7 @@ const Listing = ({pageContext}) => {
                     <div key={node.id} className="column is-4">
                       <div className="card-image">
                           <Link to={`/journal/${node.fields.slug}`}>
-                            <img src={node.frontmatter.featuredImage.childImageSharp.fluid.src} alt="Thumbnail"/>
+                            {/* <img src={node.frontmatter.featuredImage.childImageSharp.fluid.src} alt="Thumbnail"/> */}
                           </Link>
                       </div>
                       <div className="card-content">

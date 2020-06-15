@@ -47,7 +47,6 @@ module.exports = {
 							// quality: 80,
 							LinkImagesToOriginal: false,
 							// maxWidth: 1280
-							name: `content`,
 						}
 					}
 

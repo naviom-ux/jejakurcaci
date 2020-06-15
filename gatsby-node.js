@@ -7,9 +7,11 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 module.exports.onCreateNode = ({ node, actions }) => {
     const { createNodeField } = actions
-
+    
     // Making sure frontmatter images in netlifycms to works
     fmImagesToRelative(node);
+
+    
 
     if (node.internal.type === 'MarkdownRemark'){
         const slug = path.basename(node.fileAbsolutePath, '.md')
@@ -170,15 +172,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
 
 // Make sure every image in frontmatter will be a File not a String
-// exports.sourceNodes = ({ actions, schema }) => {
-//     const { createTypes } = actions
-//     createTypes(`
-//       type MarkdownRemarkFrontmatter {
-//         image: File
-//       }
+exports.sourceNodes = ({ actions, schema }) => {
+    const { createTypes } = actions
+    createTypes(`
+      type MarkdownRemarkFrontmatter {
+        image: File
+      }
   
-//       type MarkdownRemark implements Node {
-//         frontmatter: MarkdownRemarkFrontmatter
-//       }
-//     `)
-//   }
+      type MarkdownRemark implements Node {
+        frontmatter: MarkdownRemarkFrontmatter
+      }
+    `)
+  }

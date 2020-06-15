@@ -12,7 +12,7 @@ collections:
     create: true
     slug: '{{slug}}'
     media_folder: ''
-    public_folder: 'img/uploads'
+    public_folder: ''
     editor:
       preview: false
     fields:
@@ -31,7 +31,7 @@ collections:
     create: true
     slug: '{{slug}}'
     media_folder: ''
-    public_folder: 'img/uploads'
+    public_folder: ''
     editor:
       preview: false
     fields:
