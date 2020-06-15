@@ -28,16 +28,19 @@ const CategoryPhotographyPage = ({
             <NavbarCategoryPhotography/>
             <div className="sidemenu-label">MENU</div>
         </nav>
-        <div className="columns journal-list is-centered">
+        <div className="columns photography-list is-centered">
           <div className="column is-10">
             <div className="filter-section">
-              {group.map(category => (
-                <button key={category.fieldValue} className="filter">
+                <Link to="/photography">
+                  <button className="filter-active disabled-cursor">ALL</button>
+                </Link>
+                  {group.map(category => (
                     <Link to={`/photography/${kebabCase(category.fieldValue)}/`}>
-                      {category.fieldValue} <span className="hashtag">({category.totalCount})</span>
+                      <button key={category.fieldValue} className="filter">
+                            {category.fieldValue} <span className="hashtag">({category.totalCount})</span>
+                      </button>
                     </Link>
-                </button>
-              ))}
+                  ))}
             </div>
 
             <div className="columns is-multiline">

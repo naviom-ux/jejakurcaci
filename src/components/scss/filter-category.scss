@@ -18,6 +18,7 @@
         font-weight: 600;
         cursor: pointer;
         background: $white;
+        text-transform: uppercase;
     }
 
     .filter:focus, .filter-active:focus{
@@ -36,6 +37,10 @@
 
     .filter-active:hover{
         color: $white;
+    }
+
+    .disabled-cursor{
+        cursor: default;
     }
 
     .reset-filter{

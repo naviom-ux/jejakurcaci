@@ -81,7 +81,8 @@ module.exports = {
 			  // See http://reactcommunity.org/react-modal/#usage
 			  modalProps: { },
 			}
-		}
+		},
+		`gatsby-plugin-netlify-cms`,
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.app/offline
 		// 'gatsby-plugin-offline',
