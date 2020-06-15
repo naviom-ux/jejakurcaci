@@ -2,10 +2,10 @@
 title: Judul journal dari Netlify
 date: 2020-06-15T21:52:55.533Z
 author: Willy
-category: place
-featuredImage: img/uploads/screen-shot-2020-06-07-at-11.15.02-pm.png
+category: netlify
+featuredImage: img/uploads/screen-shot-2020-06-08-at-1.22.38-am.png
 tags:
-  - "2019"
+  - netlify
 type: japan
 ---
 asdgdsghsdgs
