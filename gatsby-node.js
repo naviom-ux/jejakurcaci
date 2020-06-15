@@ -35,7 +35,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
 	const journals = graphql(`
     {
         journals: allMarkdownRemark(
-            filter: { fileAbsolutePath: { glob: "**/src/pages/journal/*.md" } },
+            filter: {
+                frontmatter: {type: {eq: "journal"}}
+            },
             sort: { fields: [frontmatter___date], order: DESC }
         ) {
             edges {
@@ -134,7 +136,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         {
             photographs: allMarkdownRemark(
                 filter: {
-                    fileAbsolutePath: { glob: "**/src/pages/photography/*.md" }
+                    frontmatter: {type: {eq: "photography"}}
                 },
                 sort: { fields: [frontmatter___date], order: DESC }
             ) {
@@ -172,7 +174,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
 
 // Make sure every image in frontmatter will be a File not a String
-
 exports.sourceNodes = ({ actions, schema }) => {
     const { createTypes } = actions
     createTypes(`

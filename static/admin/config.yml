@@ -10,10 +10,9 @@ collections:
     label: 'Journal'
     folder: 'content/journal'
     create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
+    slug: '{{slug}}'
+    media_folder: 'static/img/uploads'
+    public_folder: 'img/uploads'
     editor:
       preview: false
     fields:
@@ -30,10 +29,9 @@ collections:
     label: 'Photography'
     folder: 'content/photography'
     create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
+    slug: '{{slug}}'
+    media_folder: 'static/img/uploads'
+    public_folder: 'img/uploads'
     editor:
       preview: false
     fields:
