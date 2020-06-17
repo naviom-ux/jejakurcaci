@@ -10,6 +10,10 @@ const RecentWorks = () => {
     const data = useStaticQuery(graphql`
         query{
             regular: allMarkdownRemark(
+                sort: {
+                    fields: [frontmatter___date]
+                    order: DESC
+                },
                 filter: {
                     frontmatter: { type: { eq: "photography" } }
                 },
@@ -38,6 +42,10 @@ const RecentWorks = () => {
 
 
             featured: allMarkdownRemark(
+                sort: {
+                    fields: [frontmatter___date]
+                    order: DESC
+                },
                 filter: {
                     frontmatter: { type: { eq: "photography" } }
                 },
