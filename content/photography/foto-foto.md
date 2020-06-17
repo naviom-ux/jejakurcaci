@@ -9,6 +9,7 @@ thumbnail2: jejakurcaci_emen_dina_couplesession-17.jpg
 thumbnail3: jejakurcaci_emen_dina_couplesession-17.jpg
 thumbnail4: jejakurcaci_emen_dina_couplesession-17.jpg
 thumbnail5: jejakurcaci_emen_dina_couplesession-17.jpg
+totalImages: "2"
 tags:
   - netlify
 quote: dasgs
