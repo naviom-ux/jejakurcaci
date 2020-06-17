@@ -1,6 +1,11 @@
 const path = require('path')
+// Gatsby paginate plugin
 const createPaginatedPages = require('gatsby-paginate')
 const _ = require("lodash")
+
+// Gatsby awesome pagination plugin
+const { paginate } = require('gatsby-awesome-pagination');
+
 
 // Making sure frontmatter images in netlifycms to works
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
@@ -40,6 +45,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     const tagTemplate = path.resolve("src/templates/tags.js")
     const catPhotographyTemplate = path.resolve("src/templates/photography-category.js")
 
+
     // Individual journals pages
 	const journals = graphql(`
     {
@@ -61,17 +67,11 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 }
             }
         }
-        tagsGroup: allMarkdownRemark(limit: 2000) {
+        tagsGroup: allMarkdownRemark {
             group(field: frontmatter___tags) {
               fieldValue
             }
           }
-
-        categoriesGroup:allMarkdownRemark(limit: 2000){
-            group(field: frontmatter___category) {
-                fieldValue
-            }
-        }
 
     }
     `).then(result => {
@@ -104,18 +104,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
             })
         })
 
-        // Extract category data from query
-        const categories = result.data.categoriesGroup.group
-        // Make category pages
-        categories.forEach(category => {
-            createPage({
-                path: `/photography/${_.kebabCase(category.fieldValue)}/`,
-                component: catPhotographyTemplate,
-                context: {
-                    category: category.fieldValue,
-                },
-            })
-        })
 
         // Pagination for journal listing page
         createPaginatedPages({
@@ -146,6 +134,12 @@ module.exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
+
+            categoriesGroup:allMarkdownRemark{
+                group(field: frontmatter___category) {
+                    fieldValue
+                }
+            }
         }
     `).then(result => {
         if (result.errors) {
@@ -162,6 +156,36 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 }
             });
         });
+
+
+        // // Plugin Gatbsy paginate
+        // // Extract category data from query
+        // const categories = result.data.categoriesGroup.group
+        // // Make category pages
+        // categories.forEach(category => {
+        //     createPage({
+        //         path: `/photography/${_.kebabCase(category.fieldValue)}/`,
+        //         component: catPhotographyTemplate,
+        //         context: {
+        //             category: category.fieldValue,
+        //         },
+        //     })
+        // })
+
+        
+
+        // Gatsby awesome pagination plugin
+        // Fetch your items (blog posts, categories, etc).
+        const categories = result.data.categoriesGroup.group
+        // Create your paginated pages
+        paginate({
+            createPage, // The Gatsby `createPage` function
+            items: categories, // An array of objects
+            itemsPerPage: 3, // How many items you want per page
+            pathPrefix: `/photography`, // Creates pages like `/blog`, `/blog/2`, etc
+            component: path.resolve('src/templates/photography-index.js'), // Just like `createPage()`
+        });
+
 
     });
 
