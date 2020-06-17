@@ -45,6 +45,7 @@ collections:
       - { label: 'Thumbnail 3', name: 'thumbnail3', widget: 'image' }
       - { label: 'Thumbnail 4', name: 'thumbnail4', widget: 'image' }
       - { label: 'Thumbnail 5', name: 'thumbnail5', widget: 'image' }
+      - { label: 'Total Images', name: 'totalImages', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Quote', name: 'quote', widget: 'string' }
       - { label: 'Type', name: 'type', widget: 'string' }
