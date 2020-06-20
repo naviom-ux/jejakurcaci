@@ -1,6 +1,6 @@
 ---
 title: "Wanda & Izzan, Bandung"
-date: "2019-01-01"
+date: "2019-05-01"
 author: "Dani Effendi"
 category: "Couples & Lovebirds"
 featuredImage: "../../images/slides/wanda_&_izzan/convert dng_26.jpg"

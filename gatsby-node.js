@@ -43,7 +43,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     const photographyTemplate = path.resolve('./src/templates/photography.js')
     
     const tagTemplate = path.resolve("src/templates/tags.js")
-    const catPhotographyTemplate = path.resolve("src/templates/photography-category.js")
+    // const catPhotographyTemplate = path.resolve("src/templates/photography-category.js")
 
 
     // Individual journals pages
@@ -135,11 +135,34 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 }
             }
 
-            categoriesGroup:allMarkdownRemark{
+            catPhotographyAll:allMarkdownRemark(
+                filter: {
+                    frontmatter: {
+                        type: {eq: "photography"}
+                    }
+                }
+            ){
                 group(field: frontmatter___category) {
                     fieldValue
                 }
             }
+
+
+
+            catPhotographyA:allMarkdownRemark(
+                filter: {
+                    frontmatter: {
+                        type: {eq: "photography"}
+                        category: {eq: "Folks & Families"}
+                    }
+                }
+            ){
+                group(field: frontmatter___category) {
+                    fieldValue
+                }
+            }
+
+            
         }
     `).then(result => {
         if (result.errors) {
@@ -176,14 +199,26 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
         // Gatsby awesome pagination plugin
         // Fetch your items (blog posts, categories, etc).
-        const categories = result.data.categoriesGroup.group
+        const catPhotoAll = result.data.catPhotographyAll.group
         // Create your paginated pages
         paginate({
             createPage, // The Gatsby `createPage` function
-            items: categories, // An array of objects
+            items: catPhotoAll, // An array of objects
             itemsPerPage: 3, // How many items you want per page
-            pathPrefix: `/photography`, // Creates pages like `/blog`, `/blog/2`, etc
+            pathPrefix: `/photography/all`, // Creates pages like `/blog`, `/blog/2`, etc
             component: path.resolve('src/templates/photography-index.js'), // Just like `createPage()`
+        });
+
+        // Gatsby awesome pagination plugin
+        // Fetch your items (blog posts, categories, etc).
+        const catPhotoA = result.data.catPhotographyA.group
+        // Create your paginated pages
+        paginate({
+            createPage, // The Gatsby `createPage` function
+            items: catPhotoA, // An array of objects
+            itemsPerPage: 3, // How many items you want per page
+            pathPrefix: `/photography/folks&families`, // Creates pages like `/blog`, `/blog/2`, etc
+            component: path.resolve('src/templates/photography-index-a.js'), // Just like `createPage()`
         });
 
 

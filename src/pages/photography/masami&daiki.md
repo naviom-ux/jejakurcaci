@@ -1,6 +1,6 @@
 ---
 title: "Masami & Daiki Gaienmae, Japan"
-date: "2019-01-01"
+date: "2019-03-01"
 author: "Dani Effendi"
 category: "Couples & Lovebirds"
 featuredImage: "../../images/slides/masami_&_daiki/jejakurcaci_masami_daiki_couplesession-03.jpg"

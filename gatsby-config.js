@@ -89,9 +89,18 @@ module.exports = {
 			  modalProps: { },
 			}
 		},
+		{
+			resolve: 'gatsby-plugin-mailchimp',
+			options: {
+				endpoint: 'https://gmail.us10.list-manage.com/subscribe/post?u=d60717f3d07f21706b4b3630e&amp;id=2da012984f', // string; add your MC list endpoint here; see instructions below
+				timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+			},
+		},
 		`gatsby-plugin-netlify-cms`,
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.app/offline
 		// 'gatsby-plugin-offline',
+
+		
 	]
 };

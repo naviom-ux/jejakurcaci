@@ -1,6 +1,6 @@
 ---
 title: "Kezia’s Family, Bandung"
-date: "2019-01-01"
+date: "2019-02-01"
 author: "Dani Effendi"
 category: "Folks & Families"
 featuredImage: "../../images/slides/kezia's_family/jejakurcaci_kezia_familysession-11.jpg"
